@@ -28,20 +28,20 @@ function players(element){
         return alert("you couldn't add more then 5 player ")
     }
 
-     document.getElementById('player-count').innerText = playerlenght;
+    //  document.getElementById('player-count').innerText = playerlenght;
     
      
      display(allPlayers);
  
    
-}
+
 
  document.getElementById('calculator-id').addEventListener('click', function(){
     const perpersonAmount= document.getElementById('per-person');
     const newperpersonAmountString = perpersonAmount.value;
     const newperpersonAmount = parseInt(newperpersonAmountString);
     
-    const totalperpersonAmount = newperpersonAmount*5;
+    const totalperpersonAmount = newperpersonAmount*playerlenght;
     
     const expence = document.getElementById('expence');
     expence.value = totalperpersonAmount;
@@ -61,6 +61,7 @@ function players(element){
 
  })
 })
+}
 
 
 
