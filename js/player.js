@@ -6,7 +6,7 @@ function display(playerdetails){
 
 
     for(let i =0;i<playerdetails.length;i++){
-        // console.log(allPlayers[i]);
+       
         const name= allPlayers[i].playerName;
         const tr = document.createElement("tr");
         tr.innerHTML=
@@ -20,15 +20,17 @@ function display(playerdetails){
 function players(element){
     const playerName = element.parentNode.parentNode.children[0].innerText;
     element.setAttribute("disabled", false);
-    // console.log(playerName);
+   
     const playerobject = {playerName: playerName};
     allPlayers.push(playerobject);
      const playerlenght = allPlayers.length;
      if(playerlenght>=6){
         return alert("you couldn't add more then 5 player ")
     }
+
      document.getElementById('player-count').innerText = playerlenght;
-      
+    
+     
      display(allPlayers);
  
    
