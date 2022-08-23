@@ -33,3 +33,27 @@ function players(element){
  
    
 }
+
+ document.getElementById('calculator-id').addEventListener('click', function(){
+    const perpersonAmount= document.getElementById('per-person');
+    const newperpersonAmountString = perpersonAmount.value;
+    const newperpersonAmount = parseInt(newperpersonAmountString);
+    
+    const totalperpersonAmount = newperpersonAmount*5;
+    // console.log(totalperpersonAmount);
+    const expence = document.getElementById('expence');
+    expence.value = totalperpersonAmount;
+    // const expencetString = expence.value;
+    // const newexpenceAmount = parseInt(expencetString);
+    // // const totalExpence = expence.value;
+    // console.log(expence);
+      
+ })
+
+ document.getElementById('calculatortotal').addEventListener('click',function(){
+    addamount(manager);
+ })
+
+
+
+

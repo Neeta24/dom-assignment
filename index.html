@@ -163,8 +163,9 @@
             <h1 class="text-white text-center text-2xl mt-4">Budget</h1>
             <div class="display pt-8 text-center">
                 <span class="text-white" >Per Person</span>
-                <!-- <button class=" custom-button">1000</button></div> -->
-                <button class="btn btn-outline btn-primary">1000</button>
+                
+                <!-- <button  class="btn btn-outline btn-primary">$ <span id="per-person">00</span></button> -->
+                <input id="per-person" class="text-center" type="text" value="">
             
               
             </div>
@@ -173,24 +174,25 @@
 
            <div class="display pt-8 text-center">
             <span class="text-white" >Player Expence</span>
-           <span>$<span id="expence"  class="text-white" >5000</span></span>
+            <input id="expence" class="text-center" type="text" value="">
         </div>
 
         <div class="display pt-8 text-center">
             <span class="text-white" >manager</span>
-            <button class="btn btn-outline btn-primary">2000</button>
+            <input id="manager" class="text-center" type="text" value="">
         
         </div>
         <div class="display pt-8 text-center">
             <span class="text-white" >coach</span>
-            <button class="btn btn-outline btn-primary">4000</button>
+            <input id="coach" class="text-center" type="text" value="">
         
         </div>
         <div id="calculatortotal"  class="text-center pt-8"> <button class="btn btn-wide text-center">calculate Total</button></div>
 
         <div class="display pt-8 text-center">
             <span class="text-white" >Total</span>
-           <span>$<span id="expence" class="text-white" >11000</span></span>
+           <!-- <span>$<span id="expence" class="text-white" >11000</span></span> -->
+           <input id="amout-total" class="text-center" type="text" value="">
         </div>
 
           </div>
@@ -208,7 +210,7 @@
     </section>
     
 
-
+  <script src="js/utilities.js"></script>
     <script src="js/player.js"></script>
 </body>
 </html>
