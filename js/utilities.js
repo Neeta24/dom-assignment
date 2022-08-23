@@ -1,3 +1,4 @@
+
 function addamount(elementId){
     const managerAmount= document.getElementById(elementId);
     const managerAmountString = managerAmount.value;

@@ -27,7 +27,7 @@ function players(element){
      if(playerlenght>=6){
         return alert("you couldn't add more then 5 player ")
     }
-     document.getElementById("player-count").innerText = playerlenght;
+     document.getElementById('player-count').innerText = playerlenght;
       
      display(allPlayers);
  
@@ -40,23 +40,19 @@ function players(element){
     const newperpersonAmount = parseInt(newperpersonAmountString);
     
     const totalperpersonAmount = newperpersonAmount*5;
-    // console.log(totalperpersonAmount);
+    
     const expence = document.getElementById('expence');
     expence.value = totalperpersonAmount;
-    // const expencetString = expence.value;
-    // const newexpenceAmount = parseInt(expencetString);
-    // // const totalExpence = expence.value;
-    // console.log(expence);
+   
       
  
 
  document.getElementById('calculatortotal').addEventListener('click',function(){
      const manageraddAmount = addamount('manager');
      const coachaddAmount = addamount('coach');
-    //  console.log(manageraddAmount);
+   
      const final = manageraddAmount+coachaddAmount+totalperpersonAmount;
-    //  console.log(final);
-
+    
      const amoutTotal = document.getElementById('amout-total');
      amoutTotal.value = final;
       return amoutTotal;
