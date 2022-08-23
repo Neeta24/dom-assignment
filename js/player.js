@@ -48,11 +48,21 @@ function players(element){
     // // const totalExpence = expence.value;
     // console.log(expence);
       
- })
+ 
 
  document.getElementById('calculatortotal').addEventListener('click',function(){
-    addamount(manager);
+     const manageraddAmount = addamount('manager');
+     const coachaddAmount = addamount('coach');
+    //  console.log(manageraddAmount);
+     const final = manageraddAmount+coachaddAmount+totalperpersonAmount;
+    //  console.log(final);
+
+     const amoutTotal = document.getElementById('amout-total');
+     amoutTotal.value = final;
+      return amoutTotal;
+
  })
+})
 
 
 

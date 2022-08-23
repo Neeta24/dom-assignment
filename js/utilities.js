@@ -1,6 +1,6 @@
-function addamount(manager){
-    const managerAmount= document.getElementById('manager');
+function addamount(elementId){
+    const managerAmount= document.getElementById(elementId);
     const managerAmountString = managerAmount.value;
     const newmanagerAmount = parseInt(managerAmountString);
-    console.log(newmanagerAmount);
+    return newmanagerAmount;
 }
