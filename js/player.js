@@ -19,11 +19,16 @@ function display(playerdetails){
 
 function players(element){
     const playerName = element.parentNode.parentNode.children[0].innerText;
+    element.setAttribute("disabled", false);
     // console.log(playerName);
-    const playerobj = {playerName: playerName};
-    allPlayers.push(playerobj);
-    //  const playerlenght = allPlayers.length;
-    //  console.log(playerlenght);
+    const playerobject = {playerName: playerName};
+    allPlayers.push(playerobject);
+     const playerlenght = allPlayers.length;
+     if(playerlenght>=6){
+        return alert("you couldn't add more then 5 player ")
+    }
+   
      display(allPlayers);
+ 
    
 }
