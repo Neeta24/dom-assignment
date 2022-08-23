@@ -27,7 +27,8 @@ function players(element){
      if(playerlenght>=6){
         return alert("you couldn't add more then 5 player ")
     }
-   
+     document.getElementById("player-count").innerText = playerlenght;
+      
      display(allPlayers);
  
    
