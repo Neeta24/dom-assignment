@@ -28,9 +28,6 @@ function players(element){
         return alert("you couldn't add more then 5 player ")
     }
 
-    //  document.getElementById('player-count').innerText = playerlenght;
-    
-     
      display(allPlayers);
  
    
